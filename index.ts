@@ -38,6 +38,7 @@ cunnier('ST4RCHASER')
 cunnier('tinarskii')
 cunnier('WitMaster98')
 
+//! Only edit the above lines and not the rest of this file.
 const coreMembers = team('core-members', {
   name: 'Millennium',
   description: 'Core Members',
