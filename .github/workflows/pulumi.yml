@@ -11,12 +11,35 @@ jobs:
     env:
       PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_CONFIG_PASSPHRASE }}
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      - name: Checkout 🛎
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1 
+
+      - name: Setup node 🏗
+        uses: actions/setup-node@v3
         with:
           node-version: 16
-          cache: pnpm
+
+      - name: Setup pnpm 📦
+        id: pnpm-install
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory 📁
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+
+      - name: Setup pnpm cache 📦
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-install.outputs.dest }}
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - name: Obtain a GitHub App Installation Access Token
         id: githubAppAuth
