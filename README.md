@@ -1,3 +1,3 @@
-# configuration
+# Configuration
 
-**Creatorgarten’s Pulumi configuration** to automate the invitation of new members to the organization.
+**CunnyDev’s Pulumi configuration** to automate the invitation of new members to the organization.

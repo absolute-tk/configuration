@@ -1,4 +1,4 @@
-import { creator, grantAdmin, grantWriteAccess, team } from './lib'
+import { cunnier } from './lib'
 
 // If you participated in our events and consider yourself a creator,
 // feel free to add your username to the list below and be invited into
@@ -8,7 +8,7 @@ import { creator, grantAdmin, grantWriteAccess, team } from './lib'
 // otherwise the invitation will expire.
 //
 // Once you are a member, you can go to the member list page at
-// <https://github.com/orgs/creatorsgarten/people> and change the
+// <https://github.com/orgs/cunnydev/people> and change the
 // membership visibility to "Public." This will add the Creatorsgarten
 // logo to your GitHub profile.
 //
@@ -23,77 +23,17 @@ import { creator, grantAdmin, grantWriteAccess, team } from './lib'
 //
 // PLEASE KEEP THIS LIST SORTED ALPHABETICALLY.
 //
-creator('betich')
-creator('C0M3TZZ')
-creator('chayapatr')
-creator('DEmayonnaise')
-creator('DrowningToast')
-creator('dtinth')
-creator('dtinth-bot')
-creator('FloatKasemtan')
-creator('GGolfz')
-creator('Gusb3ll')
-creator('heypoom')
-creator('Issawat')
-creator('kana2011th')
-creator('Kittonn')
-creator('Leomotors')
-creator('mikkipastel')
-creator('Mixko50')
-creator('msp5382')
-creator('narze')
-creator('pankace')
-creator('pp3times')
-creator('PromptJS19')
-creator('rayriffy')
-creator('richeyphu')
-creator('SaltyAom')
-creator('sleepntsheep')
-creator('tao-Isaman')
-creator('tententgc')
-creator('thitiwat-t')
-creator('tinarskii')
-creator('varkaria')
-creator('balabeltmimi')
-creator('lebrancconvas')
-creator('runyasak')
-creator('siravijbb')
-
-// Website team
-const websiteMaintainer = team('website', {
-  name: 'Website',
-  description: 'Website maintainers',
-})
-websiteMaintainer('dtinth')
-websiteMaintainer('heypoom')
-websiteMaintainer('chayapatr')
-grantAdmin('creatorsgarten.org', websiteMaintainer)
-
-// Event organizers can manage the discussions repository.
-const eventOrganizer = team('organizers', {
-  name: 'Event organizers',
-  description: 'Event organizers',
-})
-eventOrganizer('betich')
-eventOrganizer('chayapatr')
-eventOrganizer('dtinth')
-eventOrganizer('heypoom')
-eventOrganizer('narze')
-eventOrganizer('rayriffy')
-eventOrganizer('SaltyAom')
-grantWriteAccess('discussions', eventOrganizer)
-
-// Hacktoberfest Museum maintainers
-const hacktoberfestMuseumMaintainers = team('hacktoberfestmuseum', {
-  name: 'Hacktoberfest Museum',
-  description: 'Hacktoberfest museum maintainers',
-})
-hacktoberfestMuseumMaintainers('Gusb3ll')
-hacktoberfestMuseumMaintainers('heypoom')
-hacktoberfestMuseumMaintainers('intaniger')
-hacktoberfestMuseumMaintainers('Leomotors')
-hacktoberfestMuseumMaintainers('ryanrw')
-hacktoberfestMuseumMaintainers('runyasak')
-hacktoberfestMuseumMaintainers('siravijbb')
-hacktoberfestMuseumMaintainers('tinarskii')
-grantWriteAccess('hacktoberfest-museum', hacktoberfestMuseumMaintainers)
+cunnier('chayapatr')
+cunnier('DrowningToast')
+cunnier('Gusb3ll')
+cunnier('Leomotors')
+cunnier('NakZaa')
+cunnier('narze')
+cunnier('palmcm')
+cunnier('rayriffy')
+cunnier('ronnapatp')
+cunnier('SaltyAom')
+cunnier('sleepntsheep')
+cunnier('ST4RCHASER')
+cunnier('tinarskii')
+cunnier('WitMaster98')
