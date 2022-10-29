@@ -25,6 +25,7 @@ import { cunnier, grantWriteAccess, team } from './lib'
 //
 cunnier('chayapatr')
 cunnier('DrowningToast')
+cunnier('goragod')
 cunnier('Gusb3ll')
 cunnier('Leomotors')
 cunnier('NakZaa')
