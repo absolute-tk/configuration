@@ -47,6 +47,7 @@ cunnier('sleepntsheep')
 cunnier('ST4RCHASER')
 cunnier('thanhgaming5550')
 cunnier('tinarskii')
+cunnier('wasdee')
 cunnier('WitMaster98')
 
 //! Only edit the above lines and not the rest of this file.
